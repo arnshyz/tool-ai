@@ -1,0 +1,36 @@
+{
+  "name": "ugc-tool",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.687.0",
+    "@aws-sdk/s3-request-presigner": "^3.687.0",
+    "@prisma/client": "^5.20.0",
+    "@sindresorhus/slugify": "^2.2.1",
+    "axios": "^1.7.7",
+    "next": "14.2.12",
+    "next-auth": "^5.0.0-beta.25",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "^3.4.14",
+    "zod": "^3.23.8",
+    "@upstash/redis": "^1.30.3",
+    "openai": "^4.58.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.12",
+    "postcss": "^8.4.47",
+    "prisma": "^5.20.0",
+    "typescript": "^5.6.3"
+  }
+}
